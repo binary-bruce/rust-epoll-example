@@ -1,4 +1,4 @@
-use std::io::prelude::*;
+use std::io::{self, prelude::*};
 use std::net::TcpStream;
 use std::os::unix::io::{AsRawFd, RawFd};
 

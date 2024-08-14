@@ -20,7 +20,7 @@ pub fn listener_read_event(key: u64) -> libc::epoll_event {
     }
 }
 
-fn listener_write_event(key: u64) -> libc::epoll_event {
+pub fn listener_write_event(key: u64) -> libc::epoll_event {
     libc::epoll_event {
         events: WRITE_FLAGS as u32,
         u64: key,

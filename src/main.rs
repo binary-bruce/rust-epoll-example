@@ -3,7 +3,7 @@ use std::io;
 use std::net::TcpListener;
 use std::os::fd::AsRawFd;
 
-use epoll::*
+use epoll::*;
 use request_context::RequestContext;
 
 #[macro_use]
